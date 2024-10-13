@@ -7,22 +7,29 @@ const MobileNav = () => {
   return (
     <nav className='
         flex flex-col bg-slate-800
-        text-white text-sm items-center
+        text-white  items-center
+        p-4 sm:p-10
+        
+        text-lg sm:text-xl
     '>
         <div className="close self-end flex
-                 w-full justify-between">
+                 w-full justify-end">
             <div className="toggle">
                 <DarkThemeToggle  />
             </div>
             <button className='
-            border-1 border-red-700 p-1'>❌</button>
+            border-1 p-1'>❌</button>
         </div>
         
         <Link href='/homepage'>Home</Link>
         <Link href='/postListing'>Designs</Link>
         <Link href='/author'>Contact</Link>
         <Link href='/enter'>Log In</Link>
-        <div className="search sm:hidden text-black">
+
+        <div className="
+                search w-[70%] sm:hidden
+                 text-black mt-4
+        ">
             <Search />
         </div>
     </nav>

@@ -6,13 +6,14 @@ import MobileNav from './MobileNav'
 
 const Nav = () => {
     return (
-        <nav>
+        <nav className='flex  flex-col'>
             <div className="
-                    wrapper 
-                    className='flex justify-between'
+                    wrapper  text-lg md:text-xl
+                    flex justify-between
+                    p-2 sm:p-4 md:p-8 lg:p-10
             ">
                 {/* brand name*/}
-              
+
                 <span className="
                     brandName font-extrabold
 
@@ -29,22 +30,24 @@ const Nav = () => {
                 </div>
 
                 {/* toggle */}
-
+                <button className='
+                        justify-self-end md:hidden
+                '>
+                    ♏
+                </button>
                 <div className="
                     toggle hidden md:flex
             ">
                     <DarkThemeToggle />
-            </div>
-                <button className='
-                        justify-self-end md:hidden
-                '>
-                        ♏
-                </button>
+                </div>
+
             </div>
 
             {/* mobile menu */}
             <div className="
-                    mobileMenu md:hidden
+
+                    mobileMenu sm:w-[77%]  md:hidden
+                    // sm:self-end
             ">
                 <MobileNav />
             </div>
