@@ -25,3 +25,29 @@ body {
     text-wrap: balance;
   }
 }
+a{
+  width: 100%;
+  padding:10px;
+
+  transition: .8s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+  border-radius: 8px;
+  font-weight: bolder;
+}
+.btn{
+  box-shadow:  0 0 3px gold inset;
+  padding:2px;
+  background-color: #020617 ;
+  border-radius: 50%;
+  border:none;
+  font-size: .8em;
+}
+a:hover{
+  background-color: #020617 ;
+  color:gold;
+  /* transition: 10s ease-in; */
+
+  /* width: 100%; */
+}
+/* .mobileMenu{
+  align-self: flex-end;
+} */

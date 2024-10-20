@@ -7,6 +7,7 @@ import MobileNav from './MobileNav'
 const Nav = () => {
     return (
         <nav className='flex  flex-col'>
+            
             <div className="
                     wrapper  text-lg md:text-xl
                     flex justify-between
@@ -29,12 +30,14 @@ const Nav = () => {
                     <DesktopNav />
                 </div>
 
-                {/* toggle */}
+                {/* menu button */}
                 <button className='
-                        justify-self-end md:hidden
+                        justify-self-end md:hidden font-extrabold p-2 border-2
                 '>
-                    ♏
+                    MENU
                 </button>
+
+                {/*  */}
                 <div className="
                     toggle hidden md:flex
             ">
@@ -43,11 +46,11 @@ const Nav = () => {
 
             </div>
 
+
             {/* mobile menu */}
             <div className="
-
-                    mobileMenu sm:w-[77%]  md:hidden
-                    // sm:self-end
+                   mobileMenu w-full  sm:w-[80%]  self-end md:hidden
+                      bg-pink-200
             ">
                 <MobileNav />
             </div>

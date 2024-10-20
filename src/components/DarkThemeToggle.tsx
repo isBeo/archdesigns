@@ -1,8 +1,21 @@
-import React from 'react'
+'use client'
+
 
 const DarkThemeToggle = () => {
+
+
+
+
+
+
+
+
   return (
-    <button>DarkThemeToggle</button>
+    <button>
+        <div >
+         Dark
+        </div>
+    </button>
   )
 }
 
