@@ -9,9 +9,9 @@ const Nav = () => {
 
 const [menu,setMenu]=useState(false)
 
-const showMenu = () =>{
-    
-    setMenu(menu=>menu=!false)
+const showMenu = (e) =>{
+    console.log(e.target)
+    setMenu(menu=>!menu)
 }
 console.log(menu)
 
@@ -42,7 +42,7 @@ console.log(menu)
 
                 {/* menu button */}
                 <button  type='button'
-                   onClick={showMenu}
+                   onClick={(e)=>showMenu(e)}
                    className='
                         justify-self-end md:hidden font-extrabold p-1 rounded-md border-2
                 '>
@@ -64,7 +64,7 @@ console.log(menu)
 
             {/* mobile menu */}
            {
-            menu && 
+            menu? '': 
             <div className="
             mobileMenu w-full  sm:w-[80%]  self-end md:hidden
                bg-pink-200
