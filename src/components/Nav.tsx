@@ -9,7 +9,7 @@ const Nav = () => {
 
 const [menu,setMenu]=useState(false)
 
-const showMenu = (e) =>{
+const showMenu = () =>{
     
     setMenu(menu=>menu=!false)
 }
