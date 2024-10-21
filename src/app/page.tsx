@@ -20,9 +20,10 @@ const page = () => {
   const aRe = aRender.toSpliced(2,0,'&')
   const re = aRender.join(' ')
   // console.log(re)
+  // bg-no-repeat bg-[url('/house__plan__319x319.png')
 
   return (
-    <div>
+    <div  className={`bg-[url('../house__plan__319x319.png')]`}>
       <div className="hero">
         
         {/* <Hero /> */}

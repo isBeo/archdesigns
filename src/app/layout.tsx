@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} bg-no-repeat bg-[url('/house__plan__319x319.png')]  body  ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable}]  body  ${geistMono.variable} antialiased`}
       >
         <Nav />
         {children}
