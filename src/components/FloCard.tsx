@@ -34,7 +34,8 @@ const FloCard = () => {
 {
     fDetails.map(f=>{
         return(
-            <div key={f.label}>
+            <div  className='rounded-md' 
+               key={f.label}>
                 <span className='
                    text-2xl font-bolder'>{f.label}</span>
                 <div className="flex flex-col dp">

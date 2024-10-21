@@ -1,10 +1,20 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import DesktopNav from './DesktopNav'
 import Search from './Search'
 import DarkThemeToggle from './DarkThemeToggle'
 import MobileNav from './MobileNav'
 
 const Nav = () => {
+
+const [menu,setMenu]=useState(false)
+
+const showMenu = (e) =>{
+    
+    setMenu(menu=>menu=!false)
+}
+console.log(menu)
+
     return (
         <nav className='flex  flex-col'>
             
@@ -31,29 +41,37 @@ const Nav = () => {
                 </div>
 
                 {/* menu button */}
-                <button className='
+                <button  type='button'
+                   onClick={showMenu}
+                   className='
                         justify-self-end md:hidden font-extrabold p-2 border-2
                 '>
                     MENU
                 </button>
 
-                {/*  */}
-                <div className="
-                    toggle hidden md:flex
-            ">
-                    <DarkThemeToggle />
-                </div>
+               
+               
+                    
+                     <div className="
+                        toggle hidden md:flex
+                    ">
+                        <DarkThemeToggle />
+                    </div>
+            
 
             </div>
 
 
             {/* mobile menu */}
+           {
+            menu && 
             <div className="
-                   mobileMenu w-full  sm:w-[80%]  self-end md:hidden
-                      bg-pink-200
-            ">
-                <MobileNav />
-            </div>
+            mobileMenu w-full  sm:w-[80%]  self-end md:hidden
+               bg-pink-200
+     ">
+         <MobileNav />
+     </div>
+           }
         </nav>
     )
 }
