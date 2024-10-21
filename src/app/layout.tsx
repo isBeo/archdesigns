@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   title: "House Plan",
   description: "Get a house plan to suit your life style. With our designs, you get everything ranging from engineers to builders.",
 };
+ 
 
 export default function RootLayout({
   children,
@@ -27,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} bg-no-repeat bg-[url('/house__plan__319x319.png')]  body  ${geistMono.variable} antialiased`}
       >
         <Nav />
         {children}

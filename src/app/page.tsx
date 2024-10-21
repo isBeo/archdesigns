@@ -24,7 +24,8 @@ const page = () => {
   return (
     <div>
       <div className="hero">
-        <Hero />
+        
+        {/* <Hero /> */}
       </div>
 
       {/* <p>{

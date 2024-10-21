@@ -10,7 +10,8 @@ const Nav = () => {
 const [menu,setMenu]=useState(false)
 
 const showMenu = (e) =>{
-    console.log(e.target)
+    menu?e.target.innerHTML = 'Menu':e.target.innerHTML='close'
+    console.log(e)
     setMenu(menu=>!menu)
 }
 console.log(menu)
@@ -19,10 +20,11 @@ console.log(menu)
         <nav className='flex  flex-col'>
             
             <div className="
-                    wrapper  text-lg md:text-xl
-                    flex justify-between
-                    p-2 sm:p-4 md:p-8 lg:p-10
+                    // wrapper  text-lg md:text-xl
+                    // flex justify-between
+                    // p-2 sm:p-4 md:p-8 lg:p-10
             ">
+                
                 {/* brand name*/}
 
                 <span className="
@@ -64,13 +66,13 @@ console.log(menu)
 
             {/* mobile menu */}
            {
-            menu? '': 
+            menu? 
             <div className="
             mobileMenu w-full  sm:w-[80%]  self-end md:hidden
                bg-pink-200
      ">
          <MobileNav />
-     </div>
+     </div>:''
            }
         </nav>
     )
