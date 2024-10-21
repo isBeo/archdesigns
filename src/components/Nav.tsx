@@ -44,7 +44,7 @@ console.log(menu)
                 <button  type='button'
                    onClick={showMenu}
                    className='
-                        justify-self-end md:hidden font-extrabold p-2 border-2
+                        justify-self-end md:hidden font-extrabold p-1 rounded-md border-2
                 '>
                     MENU
                 </button>
