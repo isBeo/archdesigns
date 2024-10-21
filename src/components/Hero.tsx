@@ -16,7 +16,7 @@ const Hero =()=>{
      </div>
 
      <div className="floatingCard absolute
-        -bottom-1/4 max-w-[300px] ml-3 right-0
+        top-1/3 max-w-[300px] ml-3 left-0
         
         ">
         <FloCard />
